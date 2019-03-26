@@ -39,12 +39,19 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   background: #FFFFFF;
   cursor: pointer;
 }
+
+.movetext
+{
+    position: relative;
+    left: 50px;
+}
+
 </style>
 <body class="w3-black w3-content" style="max-width:1600px">
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-text-white w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <img src="images/Pluslogo.png" style="width:15%">
+  <img src="/images/Pluslogo.png" style="width:15%">
   <h3 class="w3-padding-64 w3-center"><b>Personal<br>Playlist</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
@@ -97,8 +104,9 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 </nav>
 
 <!-- Top menu on small screens -->
-<header class="w3-container w3-top w3-hide-large w3-white w3-xlarge w3-padding-16">
+<header class="w3-container w3-top w3-white w3-xlarge w3-padding-16">
   <span class="w3-left w3-padding">PERSONAL PLAYLIST</span>
+  <input type="text" class="movetext" placeholder="Search.." style="width: 900px">
   <a href="javascript:void(0)" class="w3-right w3-button w3-white" onclick="w3_open()">☰</a>
 </header>
 
@@ -112,9 +120,10 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
   <!-- Photo grid -->
+<div style="position: relative; top: 84px"
   <div class="w3-row">
     <div class="w3-third">
-      <img src="Capture.PNG" style="width:100%" onclick="onClick(this)" alt="NAV - Bad Habits">
+      <img src="images/Capture.PNG" style="width:100%" onclick="onClick(this)" alt="NAV - Bad Habits">
       <img src="images/Capture1.PNG" style="width:100%" onclick="onClick(this)" alt="Rich the Kid - The World is Yours 2">
       <img src="images/Capture2.PNG" style="width:100%" onclick="onClick(this)" alt="JuiceWRLD - Death Race for Love">
     </div>
@@ -131,7 +140,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
       <img src="images/Capture8.PNG" style="width:100%" onclick="onClick(this)" alt="">
     </div>
   </div>
-
+</div>
   <!-- Pagination -->
   <div class="w3-center w3-padding-32">
     <div class="w3-bar">
@@ -156,7 +165,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- About section -->
   <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
     <h4><b>About</b></h4>
-    <img src="images/PersonalPlaylistLogo.PNG" alt="Me" class="w3-image w3-padding-32" width="200" height="200">
+    <img src="/images/PersonalPlaylistLogo.PNG" alt="Me" class="w3-image w3-padding-32" width="200" height="200">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Personal Playlist</h4>
       <p>Personal Playlist is a web-based python algorithm that uses Spotify's API to generate a curated playlist based on
@@ -191,4 +200,3 @@ function onClick(element) {
 
 </body>
 </html>
-
