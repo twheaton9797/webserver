@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="en">
-<title>W3.CSS Template</title>
+<title>Personal Playlist</title>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" type="text/css" href="style.css">
 <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
 <style>
@@ -12,12 +13,12 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 .slider {
   -webkit-appearance: none;
-  width: 100%;
-  height: 15px;
+  width: 95%;
+  height: 7px;
   border-radius: 5px;
   background: #FFFFFF;
   outline: none;
-  opacity: 0.7;
+  opacity: 1;
   -webkit-transition: .2s;
   transition: opacity .2s;
 }
@@ -33,7 +34,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 }
 
 .slider::-moz-range-thumb {
-  width: 25px;
+  width: 125px;
   height: 25px;
   border-radius: 50%;
   background: #FFFFFF;
@@ -51,7 +52,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
 
 <!-- Sidebar/menu -->
 <nav class="w3-sidebar w3-bar-block w3-black w3-animate-left w3-text-white w3-collapse w3-top w3-center" style="z-index:3;width:300px;font-weight:bold" id="mySidebar"><br>
-  <img src="/images/Pluslogo.png" style="width:15%">
+  <img src="images/Pluslogo.png" style="width:15%">
   <h3 class="w3-padding-64 w3-center"><b>Personal<br>Playlist</b></h3>
   <a href="javascript:void(0)" onclick="w3_close()" class="w3-bar-item w3-button w3-padding w3-hide-large">CLOSE</a>
   <a href="#" onclick="w3_close()" class="w3-bar-item w3-button">SIGN IN</a>
@@ -120,24 +121,37 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <div class="w3-hide-large" style="margin-top:83px"></div>
 
   <!-- Photo grid -->
-<div style="position: relative; top: 84px"
-  <div class="w3-row">
-    <div class="w3-third">
-      <img src="images/Capture.PNG" style="width:100%" onclick="onClick(this)" alt="NAV - Bad Habits">
-      <img src="images/Capture1.PNG" style="width:100%" onclick="onClick(this)" alt="Rich the Kid - The World is Yours 2">
-      <img src="images/Capture2.PNG" style="width:100%" onclick="onClick(this)" alt="JuiceWRLD - Death Race for Love">
-    </div>
+<div style="position: relative; top: 100px; left: 100px;"
+  <div class="w3-half" align="center">
+    <div class="w3-half" align="left">
+      <dl>
+        <dt>NAV - Bad Habits</dt>
+        <dd><img src="images/Capture.PNG" style="width:75%;" onclick="onClick(this)" alt="NAV - Bad Habits"></dd>
 
-    <div class="w3-third">
-      <img src="images/Capture3.PNG" style="width:100%" onclick="onClick(this)" alt="Ariana Grande - thank you, next">
-      <img src="images/Capture4.PNG" style="width:100%" onclick="onClick(this)" alt="Gunna - Drip or Drown 2">
-      <img src="images/Capture5.PNG" style="width:100%" onclick="onClick(this)" alt="Da Baby - Baby on Baby">
-    </div>
+        <dt>Rich the Kid - The World is Yours 2</dt>
+        <dd><img src="images/Capture1.PNG" style="width:75%" onclick="onClick(this)" alt="Rich the Kid - The World is Yours 2"></dd>
 
-    <div class="w3-third">
-      <img src="images/Capture6.PNG" style="width:100%" onclick="onClick(this)" alt="Roddy Ricch - Feed Tha Streets 2">
-      <img src="images/Capture7.PNG" style="width:100%" onclick="onClick(this)" alt="A Boogie wit da Hoodie - Hoodie SZN">
-      <img src="images/Capture8.PNG" style="width:100%" onclick="onClick(this)" alt="">
+        <dt>JuiceWRLD - Death Race for Love</dt>
+        <dd><img src="images/Capture2.PNG" style="width:75%" onclick="onClick(this)" alt="JuiceWRLD - Death Race for Love"></dd>
+
+        <dt>Ariana Grande - thank you, next</dt>
+        <dd><img src="images/Capture3.PNG" style="width:75%" onclick="onClick(this)" alt="Ariana Grande - thank you, next"></dd>
+
+        <dt>Gunna - Drip or Drown 2</dt>
+        <dd><img src="images/Capture4.PNG" style="width:75%" onclick="onClick(this)" alt="Gunna - Drip or Drown 2"></dd>
+
+        <dt>Da Baby - Baby on Baby</dt>
+        <dd><img src="images/Capture5.PNG" style="width:75%" onclick="onClick(this)" alt="Da Baby - Baby on Baby"></dd>
+
+        <dt>Roddy Ricch - Feed Tha Streets 2</dt>
+        <dd><img src="images/Capture6.PNG" style="width:75%" onclick="onClick(this)" alt="Roddy Ricch - Feed Tha Streets 2"></dd>
+
+        <dt>A Boogie wit da Hoodie - Hoodie SZN</dt>
+        <dd><img src="images/Capture7.PNG" style="width:75%" onclick="onClick(this)" alt="A Boogie wit da Hoodie - Hoodie SZN"></dd>
+
+        <dt>Lil Skies - Shelby</dt>
+        <dd><img src="images/Capture8.PNG" style="width:75%" onclick="onClick(this)" alt="Lil Skies - Shelby"></dd>
+      </dl>
     </div>
   </div>
 </div>
@@ -165,7 +179,7 @@ body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
   <!-- About section -->
   <div class="w3-container w3-black w3-center w3-text-light-grey w3-padding-32" id="about">
     <h4><b>About</b></h4>
-    <img src="/images/PersonalPlaylistLogo.PNG" alt="Me" class="w3-image w3-padding-32" width="200" height="200">
+    <img src="images/PersonalPlaylistLogo.png" alt="Me" class="w3-image w3-padding-32" width="200" height="200">
     <div class="w3-content w3-justify" style="max-width:600px">
       <h4>Personal Playlist</h4>
       <p>Personal Playlist is a web-based python algorithm that uses Spotify's API to generate a curated playlist based on
